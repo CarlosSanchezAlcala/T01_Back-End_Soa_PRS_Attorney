@@ -17,14 +17,14 @@ public class Attorney {
     private Integer id_attorney;
     @Column
     private String name;
-    @Column
-    private String surnamefather;
-    @Column
-    private String surnamemother;
+    @Column("surnamefather")
+    private String surnameFather;
+    @Column("surnamemother")
+    private String surnameMother;
     @Column
     private String dni;
-    @Column
-    private String phonenumber;
+    @Column("phonenumber")
+    private String phoneNumber;
     @Column
     private String address;
     @Column
@@ -34,13 +34,13 @@ public class Attorney {
     @Column
     private String status;
 
-    public Attorney(String name, String surnamefather, String surnamemother, String dni, String phonenumber,
+    public Attorney(String name, String surnameFather, String surnameMother, String dni, String phoneNumber,
                     String address, String email, String codubi, String status) {
         this.name = name;
-        this.surnamefather = surnamefather;
-        this.surnamemother = surnamemother;
+        this.surnameFather = surnameFather;
+        this.surnameMother = surnameMother;
         this.dni = dni;
-        this.phonenumber = phonenumber;
+        this.phoneNumber = phoneNumber;
         this.address = address;
         this.email = email;
         this.codubi = codubi;
